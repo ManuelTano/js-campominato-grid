@@ -30,9 +30,9 @@ button.addEventListener('click', function () {
     for (let i = 1; i <= totalCell; i++) {
         const cella = createCell(i);
         grid.appendChild(cella);
-
         cella.addEventListener('click', function () {
-        this.classList.add('clicked');
+        this.classList.toggle('clicked');
+        console.log('Hai cliccato il numero: ' + cella.innerHTML)
         })
     }
 })

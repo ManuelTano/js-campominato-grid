@@ -22,6 +22,6 @@
     font-weight: bold;
 }
 
-#grid .cell .clicked {
+#griglia .cell.clicked {
     background-color: aqua;
 }
