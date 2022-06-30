@@ -27,6 +27,7 @@ const button = document.getElementById('play');
 // Tramite un click, genero la griglia
 
 button.addEventListener('click', function () {
+    grid.innerHTML = "";
     for (let i = 1; i <= totalCell; i++) {
         const cella = createCell(i);
         grid.appendChild(cella);
