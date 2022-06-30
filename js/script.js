@@ -9,8 +9,8 @@
 const grid = document.getElementById('griglia');
 
 
-function createCell (content) {
-    const cell = document.createElement ('div');
+function createCell(content) {
+    const cell = document.createElement('div');
     cell.className = 'cell';
     cell.innerText = content;
     return cell;
@@ -26,10 +26,14 @@ const button = document.getElementById('play');
 
 // Tramite un click, genero la griglia
 
-button.addEventListener('click', function() {
-    for (let i = 1; i <= totalCell; i++ ) {
-        const cella =  createCell(i);
+button.addEventListener('click', function () {
+    for (let i = 1; i <= totalCell; i++) {
+        const cella = createCell(i);
         grid.appendChild(cella);
-    }
 
+        cella.addEventListener('click', function () {
+        this.classList.add('clicked');
+        })
+    }
 })
+
