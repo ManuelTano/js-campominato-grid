@@ -1,0 +1,19 @@
+#cyan {
+    background-color: lightseagreen;
+}
+
+#griglia {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+
+.cell {
+    width: 10%;
+    height: 10%;
+    border: 2px solid black;
+    display: flex;
+}
