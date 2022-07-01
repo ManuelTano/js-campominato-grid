@@ -1,11 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #cyan {
     background-color: lightseagreen;
 }
 
 #griglia {
-    width: 1000px;
-    height: 1000px;
+    width: 80vh;
+    height: 80vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 50px 50px;
@@ -20,8 +28,11 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    
 }
 
 #griglia .cell.clicked {
     background-color: aqua;
+    cursor: not-allowed;
 }
+

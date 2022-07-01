@@ -9,7 +9,7 @@
 const grid = document.getElementById('griglia');
 
 
-function createCell(content) {
+function createCell(content, levels) {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.innerText = content;
@@ -18,8 +18,9 @@ function createCell(content) {
 
 // Impostazioni iniziali
 
-const rows = 10;
-const cells = 10;
+
+let rows = 10;
+let cells = 10;
 const totalCell = rows * cells;
 
 const button = document.getElementById('play');
@@ -36,5 +37,7 @@ button.addEventListener('click', function () {
         console.log('Hai cliccato il numero: ' + cella.innerHTML)
         })
     }
+
+    button.innerHTML = 'Ricomincia'
 })
 
